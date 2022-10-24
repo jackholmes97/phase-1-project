@@ -6,13 +6,14 @@ body {
 }
 
 #title-banner {
+    object-fit: cover;
     background-color: forestgreen;
     font-family: muli, sans-serif;
     font-weight: 700;
-    font-style: normal;
-    letter-spacing: 5px;
-    padding: 5px;
-    border-radius: 5px;
+    font-size: 25px;
+    font-style: italic;
+    text-align: center;
+    padding: 1px;
     border-color: black;
     box-shadow: 3px 3px 5px black;
 }
@@ -32,4 +33,8 @@ body {
     font-stretch: semi-expanded;
     letter-spacing: 2px;
     font-weight: 400;
+}
+
+#generator {
+    background-color: darkgrey;
 }
