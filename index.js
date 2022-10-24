@@ -4,6 +4,10 @@ const memeContainer = document.querySelector('#meme-container');
 
 const generateButton = document.querySelector('#generate');
 
+const favoriteMemeButton= document.querySelector('#favorite-meme');
+
+const list= document.querySelector('#meme-list');
+
 let memeArr = [];
 
 let currentMeme = {};
@@ -31,6 +35,15 @@ generateButton.addEventListener('click', () => {
     document.querySelector('#meme-display').remove();
     
     console.log(renderMeme(currentMeme)) 
+
+
+
+  favoriteMemeButton.addEventListener('click', () => {
+    
+        list.appendChild(renderMeme(currentMeme))
+  })
+
+  
 })
 
 
@@ -39,5 +52,10 @@ generateButton.addEventListener('click', () => {
 function getRandom(arr) {
     return arr[Math.floor((Math.random()*arr.length))];
 }
+
+
+
+
+
 
 getMeme();
