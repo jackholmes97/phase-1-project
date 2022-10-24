@@ -1,0 +1,35 @@
+@import url("https://use.typekit.net/vgi1hvp.css");
+
+body {
+    background-color: darkslategrey;
+    min-height: 100%;
+}
+
+#title-banner {
+    background-color: forestgreen;
+    font-family: muli, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: 5px;
+    padding: 5px;
+    border-radius: 5px;
+    border-color: black;
+    box-shadow: 3px 3px 5px black;
+}
+
+
+#generate {
+    box-shadow: 3px 3px 5px black;
+    position: absolute;
+    left: 45%;
+    bottom: 50%;
+    border-color: black;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: forestgreen;
+    font-size: 24px;
+    font-family: muli, sans-serif;
+    font-stretch: semi-expanded;
+    letter-spacing: 2px;
+    font-weight: 400;
+}
