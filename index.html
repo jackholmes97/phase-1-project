@@ -13,13 +13,38 @@
         <h1>Meme Generator</h1>
 
     </div>
-    <div class="generator"></div>
+    <div class="main">
         <div id="meme-container">
 
         </div>
         <div id="generateButton">
             <button id="generate" type="button">Generate!</button>
         </div>
+    </div>
+    <div class="email-send">
+        <form onsubmit="sendEmail(); reset(); return false;">
+            <h3>Send this meme!</h3>
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="email" id="email" placeholder="Recipient Email" required>
+            <textarea id="message" rows="4" placeholder="Caption this Meme!"></textarea>
+            <button type="submit">Send Meme</button>
+        </form>
+    </div>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+        function sendEmail() {
+            Email.send({
+                Host : "smtp.elasticemail.com",
+                Username : "MemeGenerator1010@gmail.com",
+                Password : "BADA0EAF73231EF52B44BED1D5ECD6696F3B",
+                To : document.getElementById('email').value,
+                From : "MemeGenerator1010@gmail.com",
+                Subject : document.getElementById('name').value + ` has sent you a meme!`,
+                Body : "Here is your MEME LINK:" + document.getElementById('meme-display').src + "<br> Caption: "+ document.getElementById('message').value + "<br> Email sent by Meme Generator. Enjoy!",
+            })
+                .then( message => alert(message));
+        }
+    </script>
     
 </body>
 </html>
