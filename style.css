@@ -15,7 +15,9 @@ body {
     right:0;
     height: 100%;
     width:300px;
-    background-color: rgb(85, 84, 84);
+    background-color: darkslategray;
+    border-color: forestgreen;
+    border-width: 5px;
     border-radius: 5px;
 
 }
@@ -76,6 +78,8 @@ body {
     position: absolute;
     bottom: -20%;
     right: 1%;
+    float:right;
+    /* transform: translate(0px,-60px); */
     border-color: black;
     border-radius: 5px;
     padding: 10px;
@@ -153,6 +157,8 @@ form {
     display: flex;
     flex-direction: column;
     margin-bottom: 10px;
+    /* transform: translate(0px,-50px); */
+    float: left;
     /* margin-left: 400px;
     margin-right: 400px; */
     box-shadow: 3px 3px 5px black;
@@ -211,6 +217,10 @@ h3 {
     border-radius: 5px;
     width: 80%;
 
+}
+
+.new-favorite:hover {
+    background-color: rgb(21, 100, 21);
 }
 
 #submit-button:active {
