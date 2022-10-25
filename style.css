@@ -6,24 +6,111 @@ body {
 }
 
 #title-banner {
-    object-fit: cover;
+    /* overflow: auto;
+    object-fit: cover; */
+    position: flex;
     background-color: forestgreen;
     font-family: muli, sans-serif;
     font-weight: 700;
-    font-size: 25px;
+    font-size: 20px;
     font-style: italic;
     text-align: center;
-    padding: 1px;
+    /* margin-bottom: 20px; */
     border-color: black;
     box-shadow: 3px 3px 5px black;
 }
 
+#name-display{
+    font-family: muli, sans-serif;
+}
+
+#id-display {
+    font-family: muli, sans-serif;
+    font-weight: 700;
+}
+
+
+
 
 #generate {
+    margin-top: 20px;
+    box-shadow: 3px 3px 5px black;
+    /* position: absolute;
+    top: 170%;
+    left: 45%; */
+    border-color: black;
+    border-radius: 5px;
+    padding: 5px;
+    background-color: forestgreen;
+    font-size: 30px;
+    font-family: muli, sans-serif;
+    font-stretch: semi-expanded;
+    letter-spacing: 2px;
+    font-weight: 400;
+}
+#favorite-meme {
+    margin-top: 20px;
     box-shadow: 3px 3px 5px black;
     position: absolute;
-    left: 45%;
-    bottom: 50%;
+    bottom: 0%;
+    left: 75%;
+    border-color: black;
+    border-radius: 5px;
+    padding: 5px;
+    background-color: forestgreen;
+    font-size: 30px;
+    font-family: muli, sans-serif;
+    font-stretch: semi-expanded;
+    letter-spacing: 2px;
+    font-weight: 400;
+}
+
+.favorite-container {
+    position: flex;
+    top:20%;
+    width: 25%;
+    float: right;
+}
+
+#favorite-meme:active {
+    box-shadow: 3px 0px black;
+    transform: translateY(4px);
+}
+
+#generate:active {
+    box-shadow: 3px 0px black;
+    transform: translateY(4px);
+}
+
+.main {
+    width: 450px;
+    height: 500px;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-60%,-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#meme-container img {
+    width: 450px;
+    height: 450px;
+    border-color: black;
+    box-shadow: 3px 3px 5px black;
+    border-width: 2px;
+}
+
+form {
+    text-align: center;
+    position: absolute;
+    top: 100%;
+    right: 83%;
+    display: flex;
+    flex-direction: column;
+    /* margin-left: 400px;
+    margin-right: 400px; */
+    box-shadow: 3px 3px 5px black;
     border-color: black;
     border-radius: 5px;
     padding: 10px;
@@ -35,9 +122,43 @@ body {
     font-weight: 400;
 }
 
-form {
-    display: flex;
-    flex-direction: column;
+h3 {
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+#name,
+#email,
+#message {
+    font-family: muli, sans-serif;
+
+    text-align: center;
+    background-color: rgb(78, 197, 78);
+    border: none;
+    border-width: 1px;
+    margin-bottom: 1px;
+    text-decoration-color: black;
+    box-shadow: 1px 1px 5px black;
+}
+
+::placeholder {
+    color:darkslategray;
+}
+
+#submit-button {
+    border-color: black;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: forestgreen;
+    font-size: 24px;
+    font-family: muli, sans-serif;
+    font-stretch: semi-expanded;
+    letter-spacing: 2px;
+    font-weight: 400;
+}
+
+#submit-button:active {
+    background-color: rgb(21, 100, 21);
 }
 
 #generator {

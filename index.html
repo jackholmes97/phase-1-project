@@ -11,8 +11,14 @@
 <body>
     <div id="title-banner">
         <h1>Meme Generator</h1>
-
     </div>
+    <nav class="favorite-container">
+        <h1>My Meme List:</h1>
+        <ul id="meme-list">
+        </ul>
+    </nav>
+      <button id="favorite-meme" type="button">Save To Favorites</button>
+
     <div class="main">
         <div id="meme-container">
 
@@ -26,8 +32,8 @@
             <h3>Send this meme!</h3>
             <input type="text" id="name" placeholder="Your Name" required>
             <input type="email" id="email" placeholder="Recipient Email" required>
-            <textarea id="message" rows="4" placeholder="Caption this Meme!"></textarea>
-            <button type="submit">Send Meme</button>
+            <textarea id="message" rows="4" placeholder="Caption this Meme!"></textarea><br class="break">
+            <button type="submit" id="submit-button">Send Meme</button>
         </form>
     </div>
     <script src="https://smtpjs.com/v3/smtp.js"></script>
@@ -40,7 +46,7 @@
                 To : document.getElementById('email').value,
                 From : "MemeGenerator1010@gmail.com",
                 Subject : document.getElementById('name').value + ` has sent you a meme!`,
-                Body : "Here is your MEME LINK:" + document.getElementById('meme-display').src + "<br> Caption: "+ document.getElementById('message').value + "<br> Email sent by Meme Generator. Enjoy!",
+                Body : "Here is your MEME LINK: " + document.getElementById('meme-display').src + "<br> Caption: "+ document.getElementById('message').value + ' ' + "<br> Email sent by Meme Generator. Enjoy!",
             })
                 .then( message => alert(message));
         }
