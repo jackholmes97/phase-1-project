@@ -25,7 +25,7 @@ function getMeme() {
 
 function renderMeme(meme) {
     currentMeme = meme;
-    console.log(currentMeme)
+    //console.log(currentMeme)
     // console.log(randomMeme);
     let newImage = document.createElement('img')
     newImage.setAttribute('id', 'meme-display')
@@ -49,15 +49,38 @@ generateButton.addEventListener('click', () => {
     renderMeme(currentMeme) 
 })
 favoriteMemeButton.addEventListener('click', () => {
-    if (list.contains)
+    if (list.contains(document.getElementById(currentMeme.id))) {
+       return alert('Meme already included in list');
+    } else {
         displayMeme();
+    }
 })
 function displayMeme(){
-    console.log(currentMeme)
-    let newFavoriteMem= document.createElement('li')
+    //console.log(currentMeme)
+    let newFavoriteMem= document.createElement('button')
+    let newDeleteMem = document.createElement('button')
+    newDeleteMem.setAttribute('class', 'delete')
+    newDeleteMem.textContent = 'X'
+    const memeId = currentMeme.id;
+    newFavoriteMem.setAttribute('id', memeId)
+    newFavoriteMem.setAttribute('class', 'new-favorite')
     newFavoriteMem.textContent= currentMeme.name
+    const index = memeArr.findIndex(function(meme) {
+        return meme.id === memeId
+    });
+    newFavoriteMem.addEventListener('click', ()=> {
+        document.querySelector('#meme-display').remove();
+        document.querySelector('#name-display').remove();
+        document.querySelector('#id-display').remove();
+        renderMeme(memeArr[index])
+    })
+    newDeleteMem.addEventListener('click', () => {
+        newFavoriteMem.remove();
+        newDeleteMem.remove();
+    })
     list.append(newFavoriteMem);
-  }
+    list.append(newDeleteMem);
+}
 
 
 
