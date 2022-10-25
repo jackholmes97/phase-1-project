@@ -35,19 +35,23 @@ generateButton.addEventListener('click', () => {
     document.querySelector('#meme-display').remove();
     
     console.log(renderMeme(currentMeme)) 
-
-
+})
 
   favoriteMemeButton.addEventListener('click', () => {
     
-        list.appendChild(renderMeme(currentMeme))
-  })
+    displayMeme();
 
   
 })
 
+function displayMeme(){
+    console.log(currentMeme)
+    let newFavoriteMem= document.createElement('li')
+    newFavoriteMem.textContent= currentMeme.name
+    list.append(newFavoriteMem);
 
 
+  }
 
 function getRandom(arr) {
     return arr[Math.floor((Math.random()*arr.length))];
