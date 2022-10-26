@@ -11,6 +11,28 @@
 <body>
     <div id="title-banner">
         <h1>meme generator.</h1>
+        <button id="loginBtn">Login</button>
+        <button id="createAcct">Create Account</button>
+    </div>
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <form class="login-input">
+                <input id="username" type="text" placeholder="username" required>
+                <input id="password" type="password" placeholder="password" required>
+                <button type="submit" id="login-submit">Login</button>
+            </form>
+        </div>
+    </div>
+    <div id="myAcctModal" class="acctModal">
+        <div class="account-modal-content">
+            <span class="close">&times;</span>
+            <form class="account-input">
+                <input id="newUsername" type="text" placeholder="New Username" required>
+                <input id="newPassword" type="password" placeholder="New Password" required>
+                <button type="submit" id="acount-submit">Create Account</button>
+            </form>
+        </div>
     </div>
     <div class="nav-col">
         <h1>My Favorites:</h1>
@@ -30,7 +52,7 @@
         </div>
     </div>
     <div class="email-send">
-        <form onsubmit="sendEmail(); reset(); return false;">
+        <form id="email-form" onsubmit="sendEmail(); reset(); return false;">
             <h3>Send this meme!</h3>
             <input type="text" id="name" placeholder="Your Name" required>
             <input type="email" id="email" placeholder="Recipient Email" required>

@@ -15,7 +15,7 @@ body {
     right:0;
     height: 100%;
     width:300px;
-    background-color: darkslategray;
+    /* background-color: darkslategray; */
     border-color: forestgreen;
     border-width: 5px;
     border-radius: 5px;
@@ -37,6 +37,112 @@ body {
     border-color: black;
     box-shadow: 3px 3px 5px black;
 }
+#loginBtn,
+#logout,
+#createAcct {
+    margin-bottom: 5px;
+    font-family: muli, sans-serif;
+    border:none;
+    background-color: forestgreen;
+    font-size: 20px;
+}
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+    background-color: forestgreen;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 30%; /* Could be more or less, depending on screen size */
+  }
+
+  #username,
+  #password {
+    box-shadow: 1px 1px 5px black;
+    font-family: muli, sans-serif;
+    border: none;
+  }
+
+  
+  /* The Close Button */
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+
+.acctModal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content/Box */
+  .account-modal-content {
+    background-color: forestgreen;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 35%; /* Could be more or less, depending on screen size */
+  }
+
+  #newUsername,
+  #newPassword {
+    box-shadow: 1px 1px 5px black;
+    font-family: muli, sans-serif;
+    border: none;
+  }
+
+  #account-submit {
+    margin: 20px;
+    background-color: forestgreen;
+    font-family: muli,sans-serif;
+    border: none;
+
+  }
+
+  .account-close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .account-close:hover,
+  .account-close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
 
 #name-display{
     font-family: muli, sans-serif;
@@ -72,13 +178,14 @@ body {
     font-weight: 400;
 }
 #favorite-meme {
-    /* margin-top: 20px;
-    margin-bottom: 10%; */
+    /* margin-top: 20px; */
+    margin-bottom: 10px;
     box-shadow: 3px 3px 5px black;
     position: absolute;
     bottom: -20%;
     right: 1%;
     float:right;
+    display: flex;
     /* transform: translate(0px,-60px); */
     border-color: black;
     border-radius: 5px;
@@ -149,7 +256,7 @@ body {
     margin-left: 3px;
 }
 
-form {
+#email-form {
     text-align: center;
     position: absolute;
     top: 95%;

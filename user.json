@@ -1,0 +1,87 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "user": "jdh97",
+      "password": "31422",
+      "favorites": [
+        {
+          "id": "226297822",
+          "name": "Panik Kalm Panik",
+          "url": "https://i.imgflip.com/3qqcim.png",
+          "width": 640,
+          "height": 881,
+          "box_count": 3
+        },
+        {
+          "id": "89370399",
+          "name": "Roll Safe Think About It",
+          "url": "https://i.imgflip.com/1h7in3.jpg",
+          "width": 702,
+          "height": 395,
+          "box_count": 2
+        },
+        {
+          "id": "123999232",
+          "name": "The Scroll Of Truth",
+          "url": "https://i.imgflip.com/21tqf4.jpg",
+          "width": 1280,
+          "height": 1236,
+          "box_count": 2
+        },
+        {
+          "id": "181913649",
+          "name": "Drake Hotline Bling",
+          "url": "https://i.imgflip.com/30b1gx.jpg",
+          "width": 1200,
+          "height": 1200,
+          "box_count": 2
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "user": "alex",
+      "password": "12345",
+      "favorites": [
+        {
+          "id": "460541",
+          "name": "Jack Sparrow Being Chased",
+          "url": "https://i.imgflip.com/9vct.jpg",
+          "width": 500,
+          "height": 375,
+          "box_count": 2
+        },
+        {
+          "id": "112126428",
+          "name": "Distracted Boyfriend",
+          "url": "https://i.imgflip.com/1ur9b0.jpg",
+          "width": 1200,
+          "height": 800,
+          "box_count": 3
+        }
+      ]
+    },
+    {
+      "user": "bob",
+      "password": "bobby",
+      "favorites": [
+        {
+          "id": "112126428",
+          "name": "Distracted Boyfriend",
+          "url": "https://i.imgflip.com/1ur9b0.jpg",
+          "width": 1200,
+          "height": 800,
+          "box_count": 3
+        }
+      ],
+      "id": 3
+    },
+    {
+      "user": "Test",
+      "password": "test",
+      "favorites": [],
+      "id": 4
+    }
+  ]
+}
