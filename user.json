@@ -6,35 +6,35 @@
       "password": "31422",
       "favorites": [
         {
-          "id": "226297822",
-          "name": "Panik Kalm Panik",
-          "url": "https://i.imgflip.com/3qqcim.png",
+          "id": "61556",
+          "name": "Grandma Finds The Internet",
+          "url": "https://i.imgflip.com/1bhw.jpg",
           "width": 640,
-          "height": 881,
-          "box_count": 3
-        },
-        {
-          "id": "89370399",
-          "name": "Roll Safe Think About It",
-          "url": "https://i.imgflip.com/1h7in3.jpg",
-          "width": 702,
-          "height": 395,
+          "height": 480,
           "box_count": 2
         },
         {
-          "id": "123999232",
-          "name": "The Scroll Of Truth",
-          "url": "https://i.imgflip.com/21tqf4.jpg",
-          "width": 1280,
-          "height": 1236,
+          "id": "102156234",
+          "name": "Mocking Spongebob",
+          "url": "https://i.imgflip.com/1otk96.jpg",
+          "width": 502,
+          "height": 353,
           "box_count": 2
         },
         {
-          "id": "181913649",
-          "name": "Drake Hotline Bling",
-          "url": "https://i.imgflip.com/30b1gx.jpg",
-          "width": 1200,
-          "height": 1200,
+          "id": "21604248",
+          "name": "Mugatu So Hot Right Now",
+          "url": "https://i.imgflip.com/cv1y0.jpg",
+          "width": 620,
+          "height": 497,
+          "box_count": 2
+        },
+        {
+          "id": "55311130",
+          "name": "This Is Fine",
+          "url": "https://i.imgflip.com/wxica.jpg",
+          "width": 580,
+          "height": 282,
           "box_count": 2
         }
       ]
@@ -73,6 +73,30 @@
           "width": 1200,
           "height": 800,
           "box_count": 3
+        },
+        {
+          "id": "8072285",
+          "name": "Doge",
+          "url": "https://i.imgflip.com/4t0m5.jpg",
+          "width": 620,
+          "height": 620,
+          "box_count": 5
+        },
+        {
+          "id": "563423",
+          "name": "That Would Be Great",
+          "url": "https://i.imgflip.com/c2qn.jpg",
+          "width": 526,
+          "height": 440,
+          "box_count": 2
+        },
+        {
+          "id": "285870",
+          "name": "Squidward",
+          "url": "https://i.imgflip.com/64ku.jpg",
+          "width": 500,
+          "height": 750,
+          "box_count": 2
         }
       ],
       "id": 3
@@ -82,6 +106,44 @@
       "password": "test",
       "favorites": [],
       "id": 4
+    },
+    {
+      "user": "myles",
+      "password": "myles123",
+      "favorites": [
+        {
+          "id": "217743513",
+          "name": "UNO Draw 25 Cards",
+          "url": "https://i.imgflip.com/3lmzyx.jpg",
+          "width": 500,
+          "height": 494,
+          "box_count": 2
+        },
+        {
+          "id": "155067746",
+          "name": "Surprised Pikachu",
+          "url": "https://i.imgflip.com/2kbn1e.jpg",
+          "width": 1893,
+          "height": 1893,
+          "box_count": 3
+        }
+      ],
+      "id": 5
+    },
+    {
+      "user": "Dr_Daniel22",
+      "password": "Hausofdani3l!",
+      "favorites": [
+        {
+          "id": "188390779",
+          "name": "Woman Yelling At Cat",
+          "url": "https://i.imgflip.com/345v97.jpg",
+          "width": 680,
+          "height": 438,
+          "box_count": 2
+        }
+      ],
+      "id": 6
     }
   ]
 }
