@@ -20,7 +20,6 @@ let currentUser;
 
 // Get the modal
 let acctModal = document.getElementById("myAcctModal");
-
 // Get the button that opens the modal
 let acctBtn = document.getElementById("createAcct");
 

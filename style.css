@@ -144,6 +144,23 @@ body {
     cursor: pointer;
   }
 
+/* .music-player {
+    font-family: muli, sans-serif;
+    
+}
+#audio-source {
+    background-color: forestgreen;
+} */
+#play,
+#pause {
+    margin-top: 5px;
+    margin-left: 5px;
+    border: none;
+    width: 25px;
+    background-color: forestgreen;
+    font-family: muli, sans-serif;
+    box-shadow: 1px 1px 5px black;
+}
 #name-display{
     font-family: muli, sans-serif;
 }

@@ -14,6 +14,29 @@
         <button id="loginBtn">Login</button>
         <button id="createAcct">Create Account</button>
     </div>
+    <!-- <div class="music-player">
+        <h5>Listen to Music</h5>
+        <audio id="music" controls>
+            <source id="audio-source" src="Music/Curb.mp3" type="audio/mpeg"/>
+        </audio>
+    </div>  -->
+    <div>
+    <button id="play">&#9658;</button>
+    <button id="pause">&#x2161;</button>
+        <script>
+            let play= document.getElementById("play");
+            let pause= document.getElementById("pause");
+            let audio = new Audio ("Music/Curb.mp3");
+            function playMusic(){
+                audio.play()
+            }
+            function pauseMusic(){
+                audio.pause()
+            }
+            play.addEventListener("click", playMusic);
+            pause.addEventListener("click", pauseMusic);
+        </script>
+    </div>
     <div id="myModal" class="modal">
         <div class="modal-content">
             <span class="close">&times;</span>
@@ -72,7 +95,7 @@
                 Subject : document.getElementById('name').value + ` has sent you a meme!`,
                 Body : "Here is your MEME LINK: " + document.getElementById('meme-display').src + "<br> Caption: "+ document.getElementById('message').value + ' ' + "<br> Email sent by Meme Generator. Enjoy!",
             })
-                .then( message => alert(message));
+                .then(message => alert(message));
         }
     </script>
     
