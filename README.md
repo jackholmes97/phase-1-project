@@ -2,7 +2,7 @@
 (A project by: Alex Newson and Jack Holmes)
 
     Who doesnt love a good old fashioned meme? 
-    
+
     Have you ever wanted the ability to access your favorites memes, caption them, and send them to your friend, your co-worker, or even yourself. 
     
     meme generator has you covered! On this site you can create a personalized account and do just that!
@@ -17,5 +17,7 @@
     - Login/logout/Create Account functionality
     - Save a favorite meme feature
 
-## External API credit:
+## External API and Music credit:
     - Memes Provided by Imgflip API
+    - Music: Curb Your Enthusiasm Theme from youtube (https://www.youtube.com/watch?v=Ag1o3koTLWM)
+    - Email functionality powered by SMTP.js and Elastic Email
